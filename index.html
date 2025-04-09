@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>我的题库网站</title>
+</head>
+<body>
+    <h1>欢迎来到我的题库！</h1>
+    <p>这里可以下载各科资料：</p>
+    <ul>
+        <li><a href="math.pdf" download>数学资料下载</a></li>
+        <li><a href="english.pdf" download>英语资料下载</a></li>
+    </ul>
+
+    <h2>提交你的资料：</h2>
+    <form action="https://formspree.io/f/你的表单ID" method="POST">
+        <input type="email" name="email" placeholder="你的邮箱（可选）"><br><br>
+        <textarea name="message" placeholder="请提供资料链接或者描述" required></textarea><br><br>
+        <button type="submit">提交</button>
+    </form>
+</body>
+</html>
