@@ -2,21 +2,87 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>我的题库网站</title>
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            background: #007bff;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .content {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .card {
+            background: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        }
+        .card h2 {
+            margin-top: 0;
+        }
+        .form-section {
+            margin-top: 40px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-    <h1>欢迎来到我的题库！</h1>
-    <p>这里可以下载各科资料：</p>
-    <ul>
-        <li><a href="math.pdf" download>数学资料下载</a></li>
-        <li><a href="english.pdf" download>英语资料下载</a></li>
-    </ul>
+    <header>
+        <h1>欢迎来到我的题库</h1>
+        <p>收录各科优质资料，助你学习无忧</p>
+    </header>
+    <div class="content">
+        <div class="card">
+            <h2><a href="#">高中数学</a></h2>
+            <p>精选高中数学题库资料。</p>
+        </div>
+        <div class="card">
+            <h2><a href="#">初中英语</a></h2>
+            <p>全面覆盖初中英语词汇与语法。</p>
+        </div>
+        <div class="card">
+            <h2><a href="#">高考物理</a></h2>
+            <p>物理重难点突破资料集合。</p>
+        </div>
 
-    <h2>提交你的资料：</h2>
-    <form action="https://formspree.io/f/你的表单ID" method="POST">
-        <input type="email" name="email" placeholder="你的邮箱（可选）"><br><br>
-        <textarea name="message" placeholder="请提供资料链接或者描述" required></textarea><br><br>
-        <button type="submit">提交</button>
-    </form>
+        <div class="form-section">
+            <h2>提交你的资料</h2>
+            <form action="https://formspree.io/f/你的表单ID" method="POST">
+                <input type="email" name="email" placeholder="你的邮箱（可选）" style="width:100%;padding:10px;margin-bottom:10px;"><br>
+                <textarea name="message" placeholder="提供资料链接或说明" required style="width:100%;padding:10px;height:150px;margin-bottom:10px;"></textarea><br>
+                <button type="submit" style="background:#007bff;color:white;padding:10px 20px;border:none;border-radius:5px;">提交</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        © 2025 我的题库网站
+    </footer>
 </body>
 </html>
